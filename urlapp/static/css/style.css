@@ -1,0 +1,75 @@
+h1 {
+    color: #fff;
+    font-size: 60px;
+    text-align: center;
+    position: relative;
+    padding: 0 45px;
+    text-shadow: 
+        0 1px #bbb,
+        0 2px #aaa,
+        0 3px #999,
+        0 4px #888,
+        0 5px #777,
+        0 6px #666,
+        0 7px #555,
+        0 8px #444,
+        0 9px #333,
+        0 10px 8px #fff;
+}
+
+h2 {
+    background-color:aliceblue;
+    text-align: center;
+}
+
+h3 {
+    padding-top: 20px;
+}
+
+header {
+    display: flex;
+}
+
+
+.form_marker {
+    text-align: center;
+    height: 100px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.textbox {
+    padding-top: 5%;
+}
+
+body {
+    background-color: #aaa;
+}
+
+.all_tag, .img_tag, .url_tag, .text_tag {
+    background-color:oldlace;
+}
+
+label {
+    color: #fff;
+}
+
+.erro {
+    color: red;
+}
+
+.edit {
+    text-align: left;
+}
+
+.my_page {
+    color: #fff;
+    background: #000;
+    padding: 10px 10px;
+    border: none;
+    font-size: 60%;
+}
+
+.my_page:hover{
+    background: #eb6877;
+}

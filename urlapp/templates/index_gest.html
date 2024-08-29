@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URLmanagemante</title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+<!-- ここにstylesheetを追加 -->
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+    
+<body>
+    <h1>URLmanagemante</h1>
+    <form action="url_gest" method="post" class="form_marker">
+        <div class="textbox">
+            <th><label for="text">URL</label></th>
+            <th><input type="text" name="urlname"></th>
+                <th><input type="submit" value="送信"></th>
+            <p>※URLはhttps//から始まる形にしてください</p>
+            <br>
+            <br>
+            {% if finderro %}
+                <p class="erro">{{ finderro }}</p>
+            {% endif %}
+        </div>
+        <br>
+        <div class="all_tag">
+            <h2>全体</h2>
+            <p class="edit">{{ edit }}</p>
+        </div>
+        <br>
+        <br>
+        <div class="text_tag">
+            <h2>文章</h2>
+            <p>{{ text }}</p>
+        </div>
+        <br>
+        <br>
+        <div class="img_tag">
+            <h2>画像</h2>
+            {% for image in img_data %}
+                <img src="{{ image }}">
+            {% endfor %}
+        </div>
+        <br>
+        <br>
+        <div class="url_tag">
+            <h2>内部URL</h2>
+                {% for url in outurl_data %}
+                    <a href="{{ url }}">{{ url }}</a>
+                {% endfor %}
+                
+        </div>
+        <br>
+        <br>
+    </form>
+</body>
+</html>

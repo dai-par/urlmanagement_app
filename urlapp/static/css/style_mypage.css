@@ -1,0 +1,56 @@
+.myform {
+    padding-left: 5%;
+    text-align: center;
+
+}
+
+.tablename {
+    padding-left: 10px;
+    width: 60px;
+    height: 40px;
+}
+
+form {
+    display: flex;
+}
+
+h1 {
+    padding-left: 2%;
+}
+
+.btn-data {
+    margin-left: 10%;
+    color: #fff;
+    background: #000;
+    padding: 10px 10px;
+    border: none;
+    font-size: 60%;
+}
+
+.btn-data:hover {
+    background: #eb6877;
+}
+
+.btn-logout {
+    color: #fff;
+    background: #000;
+    padding: 10px 10px;
+    border: none;
+    font-size: 60%;
+}
+
+.btn-logout:hover{
+    background: #eb6877;
+}
+
+.my_page {
+    color: #fff;
+    background: #000;
+    padding: 10px 10px;
+    border: none;
+    font-size: 60%;
+}
+
+.my_page:hover{
+    background: #eb6877;
+}

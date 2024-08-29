@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mypage</title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- ここにstylesheetを追加 -->
+    <link rel="stylesheet" href="/static/css/style_mypage.css">
+</head>
+<body>
+    <form action="mypage" method="post">
+        <h1>{{ username }}のMY PAGE</h1>
+        <div class="myform">
+            <table border="1">
+                <tr>
+                    <th>タイトル</th>
+                    <th>URL</th>
+                </tr>
+                <tr>
+                    <td><input type="text" name="urlname"></td>
+                    <td><input type="text" name="urlbody"></td>
+                    <td><input type="submit" value="追加"></td>
+                </tr>
+                {% for title, url in result %}
+                <tr>
+                    <span class="tablename"> 
+                        <td>{{ title }}</td>
+                        <td><a href="{{ url }}">{{ url }}</a></td>
+                    </span>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+        
+    </form>
+    <a class="btn-data" href="{{ url_for('url_data') }}"><span>スクレイピングへ</span></a>
+    <a class="btn-logout" href="{{ url_for('logout') }}"><span>ログアウト</span></a>
+    
+</body>
+</html>

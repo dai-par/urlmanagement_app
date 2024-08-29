@@ -1,0 +1,30 @@
+h2, p {
+    padding: 3%;
+}
+
+h2 {
+    padding-top: 13%;
+}
+
+p {
+    padding-bottom: 5%;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+.forms {
+    text-align: center;
+
+}
+
+.btn-flat {
+    color: #fff;
+    background: #000;
+    padding: 1.5rem 6rem;
+}
+
+.btn-flat:hover{
+    background: #eb6877;
+}

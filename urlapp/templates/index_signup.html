@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>サインアップ</title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- ここにstylesheetを追加 -->
+    <link rel="stylesheet" href="/static/css/style_signup.css">
+</head>
+<body>
+    <div id="loginform">
+        <form action="/signup" method="post">
+            <h1>SIGHN UP</h1>
+            <div class="formsub">
+                <input type="text" name="newusername" placeholder="ユーザーネーム">
+                <input type="password" name="newpassword" placeholder="パスワード">
+                <input type="password" name="repassword" placeholder="確認">
+                <span class="layout_error"><input type="submit" value="サインアップ">
+                <div class="errormesage">{{ misserror }}</div></span>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

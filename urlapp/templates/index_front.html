@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>webスクレイピングサイト</title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- ここにstylesheetを追加 -->
+    <link rel="stylesheet" href="/static/css/style_front.css">
+</head>
+<body>
+    <div class="forms">
+        <h2>簡単Webスクレイピング</h2>
+        <p>誰でも簡単にURLを入力するだけでそのサイトの文章、画像、サイト内URLを取得できます。<br>
+        情報収集や分析にご活用ください。<br>
+        また、サインアップすることでURLのブックマークができます。</p>
+        <a class="btn btn-flat" href="{{ url_for('login') }}"><span>始める</span></a> 
+    </div>         
+</body>
+</html>

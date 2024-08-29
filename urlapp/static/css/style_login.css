@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    padding-top: 5%;
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: antiquewhite;
+    background-size: cover;
+    background-position: center;
+    font-size: 16px;
+    color: #fff;
+}
+
+#loginform {
+    background-color: #aaa;
+    position: relative;
+    margin: 5% auto;
+    width: 400px;
+    height: 250px;
+    box-shadow: 0 2px 4px #4b4b4b;
+}
+
+.formsub {
+    position: absolute;
+    height: 100px;
+}
+
+.text_div {
+    text-align: center;
+}
+
+input {
+    margin: 10px;
+    outline: none;
+}
+
+input[type="text"], input[type="password"] {
+    color: #000;
+}
+
+input[type="submit"] {
+    font-size: 60%;
+    width: 85px;
+    height: 30px;
+    padding: 10px 10px ;
+    background-color: #000;
+    margin-bottom: 20px;
+    border: none;
+}
+
+input[type="submit"]:hover {
+    background-color: #eb6877;
+
+}
+
+.btn-layout {
+    padding-left: 12%;
+    display: flex;
+}
+
+.errormesage {
+    text-align: center;
+    color: red;
+}
+

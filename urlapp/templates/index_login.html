@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ログイン</title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- ここにstylesheetを追加 -->
+    <link rel="stylesheet" href="/static/css/style_login.css">
+</head>
+<body>
+    <div id="loginform">
+        <form action="/login" method="post">
+            <h1>LOGIN</h1>
+            <div class="formsub">
+                <div class="text_div">
+                    <input type="text" name="username" placeholder="ユーザーネーム">
+                    <input type="password" name="password" placeholder="パスワード">
+                </div>
+                    
+            <span class="btn-layout"><input type="submit" value="ログイン">
+        </form>
+            <form action="/signup" method="get" ><input type="submit" value="サインアップ"></form>
+            <form action="/guest" method="post"><input type="submit" value="ゲスト"></form>
+            </span>
+            <p class="errormesage">{{ alreadyerror }}</p>
+            </div>
+        </div>
+</body>
+</html>
